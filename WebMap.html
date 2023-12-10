@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<script>
+	// windows._wordtune_extension_installed = true;
+</script>
+
+<head>
+	<title>Map Index</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<!-- <link rel="stylesheet" href="/assets/favicon.ico" type="text/css"> -->
+	<!-- <script src="ol.js" type="text/javascript"></script> -->
+	
+	<script src="https://cdn.jsdelivr.net/npm/ol@v8.2.0/dist/ol.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v8.2.0/ol.css">
+
+	<!-- <link rel="stylesheet" href="modules/ol-layerswitcher.css" type="text/css"> -->
+	<!-- <script src="modules/ol-layerswitcher.js" type="text/javascript"></script> -->
+	<!-- <link rel="stylesheet" href="modules/ol-featuretooltip.css" type="text/css"> -->
+	<link rel="stylesheet" href="static/style.css" type="text/css">
+	<!-- <script src="modules/ol-featuretooltip"></script> -->
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div id class="header">
+		<h1>Individual Cartographic Project & Individual Geoinformatics Project</h1>
+		<p>Welcome to the Vác town website</p>
+	</div>
+
+	<div class="sticky">
+		<button class="tablink" onclick="openPage('Home', this, '#FFFFFF')">Home</button>
+		<button class="tablink" onclick="openPage('GoogleMap', this, '#FFFFFF')">Vác Map</button>
+		<button class="tablink" onclick="openPage('Files', this, '#FFFFFF')">Files</button>
+		<button class="tablink" onclick="openPage('ImageMap', this, '#FFFFFF')">Gallery</button>
+		<button class="tablink" onclick="openPage('About', this, '#FFFFFF')">About</button>
+	</div>
+
+	<!-- Home -->
+	<div id="Home" class="tabcontent" style="display: none;">
+		<iframe id="front" src="front.html"></iframe>
+	</div>
+
+	<!-- GoogleMap -->
+	<div id="GoogleMap" class="tabcontent" style="display: none;">
+		<iframe id="map" src="Index.html"></iframe>
+	</div>
+
+	<!-- Files -->
+	<div id="Files" class="tabcontent" style="display: none;">
+		<h3><strong>Downloads</strong></h3> Click on the links below to download the pdf<p></p>
+		<p><button class="btn"><i class="fa fa-download"></i>
+				<a href="data/Touristic Map_Tsogzolmaa.pdf" style="color:white" download="Tsogzolmaa Touristic Map">
+					Touristic Map Tsogzolmaa pdf</a>
+				<p></p>
+			</button> </p>
+		<p><button class="btn"><i class="fa fa-download"></i>
+				<a href="data/Tsogzolmaa_thematic maps.pdf" style="color:white" download="Tsogzolmaa Thematic Map">
+					Tsogzolmaa thematic maps pdf</a>
+				<p></p>
+			</button> </p>
+		<p><button class="btn"><i class="fa fa-download"></i>
+				<a href="data/Arman_Touristic_Map.pdf" style="color:white" download="Arman touristic Map">
+					Arman touristic map pdf</a>
+				<p></p>
+			</button> </p>
+		<p><button class="btn"><i class="fa fa-download"></i>
+				<a href="data/Arman_Thematic_Map.pdf" style="color:white" download="Arman thematic Map">
+					Arman thematic map pdf</a>
+				<p></p>
+			</button> </p>
+		<p><button class="btn"><i class="fa fa-download"></i>
+				<a href="data/Qurishi_Touristic_Map.pdf" style="color:white" download="Qurishi touristic Map">
+					Qurishi touristic map pdf</a>
+				<p></p>
+			</button> </p>
+		<p><button class="btn"><i class="fa fa-download"></i>
+				<a href="data/Qurishi_Thematic_Map.pdf" style="color:white" download="Qurishi thematic Map">
+					Qurishi thematic map pdf</a>
+				<p></p>
+			</button> </p>
+		<p><button class="btn"><i class="fa fa-download"></i>
+				<a href="data/Vác Report.pdf" style="color:yellow" download="Vác report">
+					Vác report pdf</a>
+				<p></p>
+			</button> </p>
+	</div>
+
+	<!-- ImageMap -->
+	<div id="ImageMap" class="tabcontent" style="display: none;">
+		<h3>Vác Image Gallery</h3>
+		<p>...</p>
+
+		<img src="data/image1.jpeg" style="width:25%">
+		<img src="data/image2.jpeg" style="width:25%">
+		<img src="data/image3.jpeg" style="width:25%">
+		<img src="data/image4.jpeg" style="width:25%">
+		<img src="data/image5.jpeg" style="width:25%">
+		<img src="data/image6.jpeg" style="width:25%">
+	</div>
+
+	<!-- About -->
+	<div id="About" class="tabcontent" style="display: none;">
+
+		<h3>About the team</h3>
+
+		<div class="row">
+			<div class="side">
+				<div class="fakeimg" style="">
+					<img src="data/group_image.jpeg" alt="Avatar" style="width:25%;float:right">
+
+					<p> <b>MSc Cartography students at ELTE.</b>
+						<br><b>Department of Cartography and Geoinformatics</b>
+						<br><b>Budapest, Pázmány Péter stny. 1/A, 1117</b>
+					</p>
+					<p>For more information about the Department
+						<a href="http://lazarus.elte.hu/" target="_blank" style="color:cyan">Click here </a>
+					</p><br>
+
+					<p><span style="color:red;"><b>Contacts:</b></span></p>
+					<table align="center-left" border="1" cellpadding="1" cellspacing="1"
+						style="border-collapse:collapse;border:0.5px solid #336600;width:40%;float:left;">
+						<thead>
+							<tr>
+								<th scope="col">Name</th>
+								<th scope="col">Email</th>
+								<th scope="col">Phone</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<p>Tsogzolmaa</p>
+								</td>
+								<td>
+									<p>tsogzolmaamonkhbat@gmail.com</p>
+								</td>
+								<td>
+									<p>+36 20 808 4283</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>Arman</p>
+								</td>
+								<td>
+									<p>Arman@gmail.com</p>
+								</td>
+								<td>
+									<p>+36 20 809 0202</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>Qurishi</p>
+								</td>
+								<td>
+									<p>qurishi.45@geography-juniv.edu.bd</p>
+								</td>
+								<td>
+									<p>+36 20 808 6484</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+<footer>
+	<p><time id="msg">Oct 08 2023 15:50:26 GMT+0200 (Central European Summer Time)</time></p>
+	<p>© 2023 Eötvös Loránd University.</p>
+</footer>
+
+<script>
+	document.getElementById("msg").innerHTML = Date();
+
+	function openPage(pageName, elmnt, color) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablink");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].style.backgroundColor = "";
+		}
+		document.getElementById(pageName).style.display = "block";
+		elmnt.style.backgroundColor = color;
+	}
+
+	// // Get the element with id="defaultOpen" and click on it
+	// document.getElementById("defaultOpen").click();
+
+
+	// window.onscroll = function () { myFunction() };
+
+	// var tablink = document.getElementById("Home");
+	// //var sticky = tablink.offsetTop;
+
+	// function myFunction() {
+	// 	if (window.pageYOffset > sticky) {
+	// 		tablink.classList.add("sticky");
+	// 	} else {
+	// 		tablink.classList.remove("sticky");
+	// 	}
+	// }
+</script>
+
+<wordtune-read-extension>
+	#shadow-root (open)
+
+	<body>
+		<div></div>
+	</body>
+	<style data-jss="" data-meta="MuiCssBaseline">
+		html {
+			box-sizing: border-box;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+		*,
+		*::before,
+		*::after {
+			box-sizing: inherit;
+		}
+
+		strong,
+		b {
+			font-weight: 700;
+		}
+
+		body {
+			color: #232528;
+			margin: 0;
+			font-size: 14px;
+			box-sizing: border-box;
+			font-family: Open Sans, sans-serif;
+			font-weight: 400;
+			line-height: normal;
+			letter-spacing: normal;
+			background-color: #ffffff;
+		}
+
+		@media print {
+			body {
+				background-color: #fff;
+			}
+		}
+
+		body::backdrop {
+			background-color: #ffffff;
+		}
+	</style>
+</wordtune-read-extension>
+
+</html>
